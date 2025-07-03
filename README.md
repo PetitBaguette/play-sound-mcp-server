@@ -1,6 +1,6 @@
 # play-sound-mcp-server
 
-@modelcontextprotocol/sdk を利用した「ローカルのサウンドファイルを再生する」MCPサーバーのサンプルです。
+ローカルのサウンドファイルを再生するMCPサーバーです
 
 > ⚠️ 本サーバーは `afplay` コマンドを利用するため、**macOS環境でのみ利用可能** です。
 
@@ -41,23 +41,18 @@ node build/index.js
 
 ## MCPサーバーの設定例
 
-MCPクライアントで以下のように設定してください:
+MCPクライアントで以下のように設定してください(下記はVSCodeのsettings.jsonの例です):
 
 ```json
 {
-  ...
   "mcpServers": {
-    ...
     "play-sound-mcp-server": {
       "command": "node",
-      // カスタム音源を利用する場合はsoundsディレクトリに配置した上で2番目の要素にファイル名を入力(省略した場合はデフォルト音源が利用される)
-      "args": ["/絶対パス/build/index.js", "custom.mp3"]
+      "args": ["/path/to/play-sound-mcp-server/build/index.js", "custom.mp3"]
     }
   },
-  // VSCodeの場合の設定
   "github.copilot.chat.codeGeneration.instructions": [
     {
-        // サウンドを鳴らすタイミングの例
         "text": "レスポンスを返した後で必ずplay-sound-mcp-serverのplay-local-soundを実行"
     }
   ]
