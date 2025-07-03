@@ -66,3 +66,9 @@ MCPクライアントで以下のように設定してください(下記はVSCo
 ## 備考
 
 デフォルトの `sound.mp3` は [TAM Music Factory](https://www.tam-music.com/interface) の素材を利用しています。
+
+## ライセンス
+
+本リポジトリのソースコードは MIT ライセンスで提供します。
+
+デフォルト音源（sound.mp3）は [TAM Music Factory](https://www.tam-music.com/interface) の利用規約に従ってご利用ください。
